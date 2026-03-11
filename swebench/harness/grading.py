@@ -99,6 +99,14 @@ def get_eval_tests_report(
     - Fail-Fail (F2F) + P: Success (Extra Credit)
     - Pass-Fail (P2F) + P: Not considered
     """
+    # Guard: if no test results were parsed, all tests failed
+    if not eval_status_map:
+        return {
+            FAIL_TO_PASS: {"success": [], "failure": list(gold_results[FAIL_TO_PASS])},
+            PASS_TO_PASS: {"success": [], "failure": list(gold_results[PASS_TO_PASS])},
+            FAIL_TO_FAIL: {"success": [], "failure": []},
+            PASS_TO_FAIL: {"success": [], "failure": []},
+        }
 
     def check_pass_and_fail(test_case, eval_status_map, success, failed):
         if test_passed(test_case, eval_status_map):
