@@ -163,6 +163,13 @@ cython_debug/
 .api_key
 .keys
 .vscode/
+current_problem.txt
+logs/
+openorchestra_runs/
+openorchestra.*.json
+temp_workspace/
+swe_bench_lite_tasks.jsonl
+predictions.jsonl
 *.jsonl
 *.jsonl.*
 *.patch
