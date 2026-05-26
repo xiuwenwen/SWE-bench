@@ -1,0 +1,18 @@
+# One SWE-bench instance_id per line. Lines may include comments after '#'.
+# Local evaluator/report test-id mismatch case.
+astropy__astropy-7606
+
+# Local evaluator dependency drift case.
+astropy__astropy-8707
+astropy__astropy-8872
+
+astropy__astropy-13033
+
+# Recent model-capability failures confirmed by official evaluation or direct Claude experiment.
+astropy__astropy-13236
+astropy__astropy-13398
+astropy__astropy-13977
+astropy__astropy-14182
+astropy__astropy-14365
+astropy__astropy-14369
+astropy__astropy-14598
