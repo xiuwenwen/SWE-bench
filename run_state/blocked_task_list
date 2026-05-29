@@ -16,3 +16,23 @@ astropy__astropy-14182
 astropy__astropy-14365
 astropy__astropy-14369
 astropy__astropy-14598
+
+# Django model-capability failures: official FAIL_TO_PASS failures remain after patch.
+django__django-10554
+django__django-10973
+django__django-10999
+django__django-11087
+django__django-11141
+django__django-11265
+django__django-11276
+django__django-11400
+django__django-11790
+django__django-11820
+django__django-11848
+django__django-11885
+django__django-12304
+django__django-12308
+django__django-12325
+
+# Django/SWE-bench evaluator environment mismatch: old Django + newer SQLite schema rename leaks __old table references.
+django__django-10097

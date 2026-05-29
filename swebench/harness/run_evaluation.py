@@ -267,10 +267,11 @@ def run_instance(
         if rm_image:
             remove_image(client, test_spec.instance_image_key, logger)
         close_logger(logger)
-        return {
-            "completed": eval_completed,
-            "resolved": report.get(instance_id, {}).get("resolved", False),
-        }
+
+    return {
+        "completed": eval_completed,
+        "resolved": report.get(instance_id, {}).get("resolved", False),
+    }
 
 
 def run_instances(
